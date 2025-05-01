@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Pass Banner</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <h1>Custom Pass Banner</h1>
+
+        <div class="preview-container">
+            <div class="banner" id="banner">
+                <div class="text-wrapper">
+                    <div class="pass-number resizable" id="pass-number">Custom Pass 7</div>
+                    <div class="pass-name resizable" id="pass-name">AFTERLIFE</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="controls-container">
+            <div class="file-input-group">
+                <label class="custom-file-upload">
+                    <input type="file" id="background-upload" accept="image/*">
+                    <span>Выбрать фон</span>
+                </label>
+                <label class="custom-file-upload">
+                    <input type="file" id="cover-upload" multiple accept="image/*">
+                    <span>Добавить обложки (до 5)</span>
+                </label>
+            </div>
+
+            <div class="text-input-group">
+                <input type="text" id="pass-number-input" placeholder="Номер пропуска">
+                <input type="text" id="pass-name-input" placeholder="Название пропуска">
+            </div>
+
+            <div class="buttons">
+                <button class="btn generate-btn" id="generate-btn">Сгенерировать</button>
+                <button class="btn download-btn" id="download-btn">Скачать баннер</button>
+                <button class="btn reset-btn" id="reset-btn">Сбросить позиции</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
